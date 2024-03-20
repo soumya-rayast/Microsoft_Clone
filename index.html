@@ -9,49 +9,113 @@
 </head>
 
 <body>
-    <div class="navbar flex justify-between items-center p-4">
-        <div class="flex justify-center items-center md:order-2">
-            <div class="hamburger inline-block p-4 md:hidden">
-                <div class="line h-0.5 w-6 my-1 bg-black "></div>
-                <div class="line h-0.5 w-6 my-1 bg-black "></div>
-                <div class="line h-0.5 w-6 my-1 bg-black "></div>
+    <div class="container mx-auto">
+        <div class="navbar flex justify-between items-center p-4">
+            <div class="flex justify-center items-center md:order-2">
+                <div class="hamburger inline-block p-4 md:hidden">
+                    <div class="line h-0.5 w-6 my-1 bg-black "></div>
+                    <div class="line h-0.5 w-6 my-1 bg-black "></div>
+                    <div class="line h-0.5 w-6 my-1 bg-black "></div>
+                </div>
+                <div class="search md:hidden w-6 mr-6">
+                    <img src="./search.svg" alt="">
+                </div>
             </div>
-            <div class="search md:hidden ">
-                SearchIcon
+
+            <div class="logo text-center flex md:order-1">
+                <div class="p-4 w-36 flex justify-center"><img class="w-[80%]" src="./mslogo.png" alt=""></div>
+                <div
+                    class="features absolute md:static w-fit md:w-auto bg-gray-200 md:bg-white inset-0 md:flex md:justify-center md:mx-4 space-x-6 -translate-x-96 md:translate-x-0  md:items-center ">
+                    <div class="fitem hover:underline cursor-pointer">Microsoft 365</div>
+                    <div class="fitem hover:underline cursor-pointer">Teams</div>
+                    <div class="fitem hover:underline cursor-pointer">Copilot</div>
+                    <div class="fitem hover:underline cursor-pointer">Windows</div>
+                    <div class="fitem hover:underline cursor-pointer">Surface</div>
+                    <div class="fitem hover:underline cursor-pointer">Xbox</div>
+                    <div class="fitem hover:underline cursor-pointer">Support</div>
+                </div>
+            </div>
+            <div class="cart text-center md:order-3 flex">
+                <div class="search  hidden md:block mr-6 font-bold">
+                    All Microsoft
+                </div>
+                <div class="mx-2">Search</div>
+                <img class="w-4 mr-4 " src="./search.svg" alt="">
+                <div class="flex pt-1">
+                    <img class="w-6 h-6 mx-2" src="./icons8-shopping-cart-50.png" alt="">
+                    <img class="w-6 h-6 mx-2" src="./icons8-account-50.png" alt="">
+
+                </div>
             </div>
         </div>
 
-        <div class="logo text-center flex md:order-1">
-            <div class="p-4 w-36"><img src="./mslogo.png" alt=""></div>
-            <div class="features absolute md:static w-fit md:w-auto bg-gray-200 md:bg-white inset-0 md:flex md:mx-4 space-x-2 -translate-x-96 md:translate-x-0">
-                <div class="fitem">Microsoft 365</div>
-                <div class="fitem">Office</div>
-                <div class="fitem">Windows</div>
-                <div class="fitem">Surface</div>
-                <div class="fitem">Xbox</div>
-                <div class="fitem">Support</div>
+        <div class="slider flex flex-col-reverse md:flex-row bg-gray-100">
+            <div class="left flex flex-col justify-center items-center md:items-baseline py-8 ml-12">
+                <h1 class="text-2xl md:text-4xl mx-5 font-medium">
+                    Surface Laptop 4
+                </h1>
+                <p class="w-3/4 mx-5 md:text-left">Do it all with a perfect balance of sleek, ultra-thin design,m
+                    multitasking speed and improved performance. </p>
+                <button class="text-white bg-black p-4 py-2 my-6 font-bold mx-5">Shop Now </button>
+            </div>
+            <div class="right flex justify-center items-center md:mt-6">
+                <img class="w-[60rem] md:w-[60rem]" src="./Panel1-f20b-FBShortHero_VP2-859x540.jpeg" alt="">
             </div>
         </div>
-        <div class="cart text-center md:order-3 flex">
-            <div class="search  hidden md:block ">
-                All Microsoft SearchIcon
-            </div>
-            <div>
-                Cart Account
-            </div>
-        </div>
-    </div>
 
-    <div class="slider flex flex-col-reverse md:flex-row bg-gray-100">
-        <div class="left flex flex-col justify-center items-center md:items-baseline py-8">
-            <h1 class="text-2xl md:text-4xl mx-5 font-medium">
-                Surface Laptop 4
-            </h1>
-            <p class="w-3/4 mx-5 md:text-left">Do it all with a perfect balance of sleek, ultra-thin design,m multitasking speed and improved performance. </p>
-            <button class="text-white bg-black p-4 py-2 my-6 font-bold mx-5">Shop Now</button>
+        <div class="md:justify-center md:items-center promo space-y-6  flex flex-col lg:flex-row">
+            <div class="item flex md:flex-col items-center mx-4 space-x-2 mt-6 ">
+                <img class="w-10" src="./Link-List-Icons-Microsoft-365.svg" alt="">
+                <span class="text-blue-600 underline cursor-pointer font-medium w-[8rem] md:text-center ">Choose your
+                    Microsoft 365</span>
+            </div>
+            <div class="item flex  md:flex-col items-center mx-4 space-x-2 ">
+                <img class="w-10" src="./Link-List-Icons-Xbox-Games-Consoles.svg" alt="">
+                <span class="text-blue-600 underline cursor-pointer font-medium w-[8rem] md:text-center">Shop
+                    Xbox</span>
+            </div>
+            <div class="item flex md:flex-col items-center mx-4 space-x-2 ">
+                <img class="w-10" src="./Link-List-Icons-Microsoft-365.svg" alt="">
+                <span class="text-blue-600 underline cursor-pointer font-medium w-[8rem] md:text-center">Get Windows
+                    11</span>
+            </div>
+            <div class="item flex md:flex-col items-center mx-4 space-x-2 ">
+                <img class="w-10" src="./Link-List-Icons-Surface-Devices.svg" alt="">
+                <span class="text-blue-600 underline cursor-pointer font-medium w-[8rem] md:text-center">Explore Surface
+                    Devices</span>
+            </div>
         </div>
-        <div class="right">
-            <img src="img1.jpg" alt="">
+
+        <div class="container-box md:justify-center md:items-center  flex flex-wrap mt-6">
+            <div class="box flex flex-col w-1/5  mx-4 border shadow mt-4">
+                <img src="./laptop1.webp" alt="">
+                <span class="mt-6 p-4">
+                    Sophisticated style and multitasking speed powered by 12th Gen Intel® Core, with Windows 11.
+                </span>
+                <button class="bg-blue-700 text-white mx-2 hover:bg-blue-900 w-fit mt-8 p-2 mb-8">Learn more</button>
+            </div>
+            <div class="box flex flex-col w-1/5 mx-8 border shadow mt-4">
+                <img src="./laptop1.webp" alt="">
+                <span class="mt-6 p-4">
+                    Sophisticated style and multitasking speed powered by 12th Gen Intel® Core, with Windows 11.
+                </span>
+                <button class="bg-blue-700 text-white mx-2 hover:bg-blue-900 w-fit mt-8 p-2 mb-8">Learn more</button>
+            </div>
+            <div class="box flex flex-col w-1/5 mx-8 border shadow mt-4">
+                <img src="./laptop1.webp" alt="">
+                <span class="mt-6 p-4">
+                    Sophisticated style and multitasking speed powered by 12th Gen Intel® Core, with Windows 11.
+                </span>
+                <button class="bg-blue-700 text-white mx-2 hover:bg-blue-900 w-fit mt-8 p-2 mb-8">Learn more</button>
+            </div>
+            <div class="box flex flex-col w-1/5 mx-8 border shadow mt-4">
+                <img src="./laptop1.webp" alt="">
+                <span class="mt-6 p-4">
+                    Sophisticated style and multitasking speed powered by 12th Gen Intel® Core, with Windows 11.
+                </span>
+                <button class="bg-blue-700 text-white mx-2 hover:bg-blue-900 w-fit mt-8 p-2 mb-8">Learn more</button>
+            </div>
+
         </div>
     </div>
 </body>
